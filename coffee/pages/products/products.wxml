@@ -1,0 +1,65 @@
+<!-- products.wxml -->
+<view class="container">
+  <!-- 修改后的门店选择器 -->
+  <view class="store-selector">
+    <picker 
+      bindchange="handleStoreChange" 
+      value="{{storeIndex}}" 
+      range="{{storeList}}" 
+      range-key="name">
+      <view class="current-store">
+        <view class="store-name">{{storeList[storeIndex].name || '加载中...'}}</view>
+        <view class="store-info">
+          <block wx:if="{{storeList[storeIndex].address}}">
+            <text class="address">{{storeList[storeIndex].address}}</text>
+          </block>
+          <block wx:if="{{storeList[storeIndex].phone}}">
+            <text class="phone">联系电话: {{storeList[storeIndex].phone}}</text>
+          </block>
+        </view>
+        <view class="arrow-down">
+          <text class="arrow-icon">▼</text>
+        </view>
+      </view>
+    </picker>
+  </view>
+
+  <!-- 商品列表 -->
+  <view class="products-container">
+    <block wx:if="{{products.length > 0}}">
+      <view class="product-item" wx:for="{{products}}" wx:key="goods_id">
+        <!-- 商品图片区域 -->
+        <view class="product-image" bindtap="goDetail" data-info="{{item}}">
+          <image src="{{item.img}}" mode="aspectFill" lazy-load="true"></image>
+        </view>
+        <!-- 商品信息区域 -->
+        <view class="product-info">
+          <!-- 标题与描述 -->
+          <view class="product-title" bindtap="goDetail" data-info="{{item}}">{{item.title || '未命名商品'}}</view>
+          <view class="product-desc">{{item.ingredients || ''}}</view>
+          <!-- 价格与操作按钮 -->
+          <view class="product-price-actions">
+            <view class="product-price">¥<text class="price-value">{{item.money || 0}}</text></view>
+            <view class="product-actions">
+              <view 
+                class="cart-btn" 
+                bindtap="addCart" 
+                data-product="{{item}}">
+                加入购物车
+              </view>
+              <view 
+                class="buy-btn" 
+                bindtap="buyNow" 
+                data-product="{{item}}">
+                立即购买
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:else>
+      <view class="empty-tip">该门店暂无商品</view>
+    </block>
+  </view>
+</view>

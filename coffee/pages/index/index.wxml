@@ -1,0 +1,83 @@
+<!-- index.wxml -->
+<view class="index">
+  <van-notice-bar
+    color="#2336AE"
+    background="#F2F5FC"
+    left-icon="volume-o"
+    text="{{msg}}"
+  />
+  <view class="lunbo">
+    <swiper
+      circular
+      autoplay
+      interval="3600"
+      indicator-dots
+      indicator-active-color="#ffffff"
+    >
+      <swiper-item class="swiper_item">
+        <image src="../../images/1.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/3.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/4.jpg"></image>
+      </swiper-item>
+      <swiper-item bindtap="goLuck">
+        <image src="../../images/2.jpg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- 新增功能入口 -->
+  <view class="func-grid">
+    <view class="func-item" bind:tap="goMenu">
+      <image class="func-icon" src="/static/home/coffee.png"></image>
+      <text class="func-text">在线点单</text>
+      <text class="func-desc">小程序下单免排队</text>
+    </view>
+    <view class="func-item" bind:tap="goProducts">
+      <image class="func-icon" src="/static/home/taoci.png"></image>
+      <text class="func-text">周边商品</text>
+      <text class="func-desc">特色文创留下回忆</text>
+    </view>
+  </view>
+
+  <view class="title1">猜你喜欢：</view>
+  <view class="zhengzai">
+    <view class="con">
+      <scroll-view
+        scroll-x
+        class="fq_shop"
+        enable-flex="true"
+      >
+        <view
+          class="item"
+          wx:for="{{reArr}}"
+          wx:key="this"
+          bind:tap="goDetail"
+          data-obj="{{item}}"
+        >
+          <view class="img">
+            <image src="{{item.img}}" />
+          </view>
+          <view class="title">{{item.title}}</view>
+          <view class="btns">
+            <view class="money">{{item.money}}</view>
+            <view
+              class="btn"
+              data-item="{{item}}"
+              catch:tap="addCart"
+            >
+              <van-icon
+                name="cart-o"
+                size="15px"
+                color="#ffffff"
+              />
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

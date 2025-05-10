@@ -1,0 +1,136 @@
+.index {
+  width: 750rpx;
+  background-color: #EDEDED;
+}
+.index .lunbo {
+  width: 750rpx;
+  height: 400rpx;
+  background-color: white;
+  overflow: hidden;
+}
+.index .lunbo swiper {
+  width: 670rpx;
+  height: 350rpx;
+  margin: 20rpx 40rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.index .lunbo swiper image {
+  width: 100%;
+  height: 100%;
+}
+.index .title1 {
+  color: #28588e;
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+}
+.index .zhengzai {
+  width: 750rpx;
+  background-color: #EDEDED;
+  overflow: hidden;
+  margin-top: -20px;
+}
+.index .zhengzai .con {
+  width: 710rpx;
+  height: 360rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+.index .zhengzai .con .title {
+  height: 90rpx;
+  font-weight: bold;
+  color: #343434;
+}
+.index .zhengzai .con .fq_shop {
+  display: flex;
+  width: 100%;
+  height: 410rpx;
+}
+.index .zhengzai .con .fq_shop .item {
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  margin: 15rpx 10rpx;
+}
+.index .zhengzai .con .fq_shop .item .img {
+  width: 240rpx;
+  height: 180rpx;
+}
+.index .zhengzai .con .fq_shop .item .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.index .zhengzai .con .fq_shop .item .title {
+  height: 40rpx;
+  margin: 15rpx 0;
+  font-size: 32rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.index .zhengzai .con .fq_shop .item .btns {
+  width: 200rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.index .zhengzai .con .fq_shop .item .btns .money {
+  color: red;
+  font-weight: bold;
+}
+.index .zhengzai .con .fq_shop .item .btns .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  color: white;
+  border-radius: 100000rpx;
+  background-color: #28588e;
+}
+/* index.wxss */
+.func-grid {
+  display: flex;
+  padding: 20rpx;
+  background: #fff;
+  justify-content: space-around;
+}
+
+.func-item {
+  width: 45%;
+  text-align: center;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.1);
+}
+
+.func-icon {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  margin-bottom: 20rpx;
+}
+
+.func-text {
+  display: block;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.func-desc {
+  display: block;
+  font-size: 24rpx;
+  color: #666;
+}

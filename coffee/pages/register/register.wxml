@@ -1,0 +1,50 @@
+<view class="login">
+  <view class="container">
+    <view class="top">
+      <!-- 手机号行 -->
+      <view class="input-line">
+        <view class="tel">
+          <van-icon name="phone-o" class="icon" />
+          <input 
+            bindinput="getTel" 
+            placeholder="手机号"
+            type="number"
+          />
+        </view>
+      </view>
+
+      <!-- 用户名行 -->
+      <view class="input-line">
+        <view class="name">
+          <van-icon name="user-o" class="icon" />
+          <input 
+            bindinput="getUser" 
+            placeholder="用户名"
+          />
+        </view>
+      </view>
+
+      <!-- 密码输入组 -->
+      <view class="input">
+        <van-icon name="lock" class="icon" />
+        <input
+          type="password"
+          bindinput="getPaw"
+          placeholder="请输入密码"
+        />
+      </view>
+
+      <view class="input">
+        <van-icon name="lock" class="icon" />
+        <input
+          type="password"
+          bindinput="getPaws"
+          placeholder="确认密码"
+        />
+      </view>
+    </view>
+    
+    <view class="singin" bind:tap="goLogin">已有账号？立即登录</view>
+    <view class="btn" bind:tap="login">注 册</view>
+  </view>
+</view>

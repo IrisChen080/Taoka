@@ -1,0 +1,81 @@
+<!--分类页面-->
+<view class="category">
+  <!--顶部搜索框-->
+  <van-search
+    value="{{ value }}"
+    shape="round"
+    background="#ffffff"
+    placeholder="请输入搜索关键词"
+    disabled
+    bind:tap="goSearch"
+  />
+   <!-- 修改后的门店选择器 -->
+  <view class="store-selector">
+    <picker 
+      mode="selector" 
+      range="{{storeList}}" 
+      range-key="store_name"
+      value="{{storeIndex}}" 
+      bindchange="handleStoreChange"
+    >
+      <view class="current-store">
+        <view class="store-name">{{storeList[storeIndex].store_name || '选择门店'}}</view>
+        <view class="store-info">
+          <block wx:if="{{storeList[storeIndex].address}}">
+            <text class="address">{{storeList[storeIndex].address}}</text>
+          </block>
+          <block wx:if="{{storeList[storeIndex].phone}}">
+            <text class="phone">联系电话: {{storeList[storeIndex].phone}}</text>
+          </block>
+        </view>
+        <view class="arrow-down">
+          <van-icon name="arrow-down" size="14px" color="#888888" />
+        </view>
+      </view>
+    </picker>
+  </view>
+  
+  <view class="cates">
+    <!--左侧菜单区-->
+    <scroll-view class="left_menu_list" scroll-y>
+      <view
+        class="menu_item {{item.fenlei_id===currentIndex?'active':''}}"
+        wx:for="{{leftMenuList}}"
+        wx:key="this"
+        data-id="{{item.fenlei_id}}"
+        bindtap="handleItemTap"
+      >{{item.text}}
+      </view>
+    </scroll-view>
+    <!--右侧内容区-->
+    <scroll-view
+      class="right_content"
+      scroll-y
+      scroll-top="{{scrollTop}}"
+    >
+      <view class="conent">
+        <view
+          class="conent-item"
+          wx:for="{{rightConentList}}"
+          wx:key="this"
+          bind:tap="goDetail"
+          data-obj="{{item}}"
+        >
+          <view class="img">
+            <image src="{{item.img}}" />
+          </view>
+          <view class="left">
+            <view class="title">{{item.title}}</view>
+            <view class="jianjie">原料：{{item.ingredients}}</view>
+            <view class="biaoqian">
+              <view>
+                <text>￥: {{item.money}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="text" wx:if="{{rightConentList.length==0}}">暂无相关咖啡~</view>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,168 @@
+  <view class="pay {{userLevel === '钻石' ? 'diamond-member' : userLevel === '黄金' ? 'gold-member' : ''}}">
+  <!-- 会员等级显示 -->
+  <view class="member-badge" wx:if="{{showMemberBadge}}">
+    <image class="member-icon" src="/images/member_icon.png" mode="aspectFit"></image>
+    <view class="member-info">
+      <text class="member-level">{{userLevel}}会员</text>
+      <text class="member-discount">享受{{discount * 10}}折优惠</text>
+    </view>
+  </view>
+  
+  <!-- 商品列表 -->
+  <view class="shop-list">
+    <view class="shop-item" wx:for="{{cartArr}}" wx:key="*this">
+      <view class="card">
+        <van-card
+          price="{{item.money}}"
+          num="{{item.shopNum}}"
+          title="{{item.title}}"
+          thumb="{{ item.img }}"
+          data-item="{{item}}"
+          bind:tap="goDetail"
+          title-class="card-title"
+        >
+          <!-- 在每个商品卡片添加折扣标记 -->
+          <view slot="tags" wx:if="{{showMemberBadge}}">
+            <view class="discount-tag">{{userLevel}}会员价</view>
+          </view>
+        </van-card>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 堂食/外带选择 -->
+  <view class="takeout-section">
+    <view class="takeout-header">
+      <text class="takeout-title">用餐方式</text>
+      <!-- 用 takeoutText 展示当前状态 -->
+      <text class="takeout-status">{{ takeoutText }}</text>
+    </view>
+    <view class="takeout-buttons">
+      <button 
+        class="takeout-btn {{isTakeout === 0 ? 'active' : ''}}" 
+        data-type="0" 
+        bindtap="toggleTakeout"
+      >堂食</button>
+      <button 
+        class="takeout-btn {{isTakeout === 1 ? 'active' : ''}}" 
+        data-type="1" 
+        bindtap="toggleTakeout"
+      >外带</button>
+    </view>
+  </view>
+
+  <!-- 价格明细 -->
+  <view class="price-detail" wx:if="{{showMemberBadge}}">
+    <view class="price-row">
+      <text class="price-label">商品原价：</text>
+      <text class="price-value">¥{{originalAmount}}</text>
+    </view>
+    <view class="price-row">
+      <text class="price-label">会员折扣：</text>
+      <text class="price-value discount-value">-¥{{discountAmount}}</text>
+    </view>
+    <view class="price-row" wx:if="{{youhuijuan > 0}}">
+      <text class="price-label">优惠券减免：</text>
+      <text class="price-value discount-value">-¥{{youhuijuan}}</text>
+    </view>
+    <view class="price-divider"></view>
+    <view class="price-row total-row">
+      <text class="price-label">实付金额：</text>
+      <text class="price-value total-value">¥{{heji}}</text>
+    </view>
+  </view>
+
+  <!-- 提交栏 -->
+  <van-submit-bar
+    price="{{ heji*100 }}"
+    button-text="提交订单"
+    bind:submit="onClickShow"
+  >
+    <view slot="tip">
+      <text class="coupon" wx:if="{{!youhuijuan}}" bind:tap="goLuck">优惠券</text>
+      <text class="coupon-active" wx:if="{{youhuijuan}}" bind:tap="goLuck">{{youhui}}</text>
+    </view>
+  </van-submit-bar>
+
+  <!-- 支付弹窗（微信支付风格） -->
+  <van-overlay show="{{ show }}" bind:click="onClickHide" overlay-class="payment-overlay">
+    <view class="payment-wrapper" catch:tap="noop">
+      <view class="payment-header">
+        <text class="payment-title">确认支付</text>
+        <text class="payment-amount">¥ {{heji}}</text>
+      </view>
+      
+      <!-- 会员折扣信息 -->
+      <view class="payment-discount" wx:if="{{showMemberBadge}}">
+        <text class="discount-detail">{{userLevel}}会员已享{{(1-discount)*100}}%折扣</text>
+      </view>
+      
+      <view class="payment-method">
+        <text class="method-title">支付方式</text>
+        <view class="method-select">
+          <view class="method-option">
+            <image class="wechat-icon" src="/images/wechat_pay.png" mode="aspectFit"></image>
+            <text>微信支付</text>
+          </view>
+        </view>
+      </view>
+      
+      <view class="delivery-method">
+        当前选择：{{ takeoutText }}
+      </view>
+      
+      <!-- 确认支付按钮 -->
+      <button class="confirm-btn" bind:tap="showPasswordInput">立即支付</button>
+    </view>
+  </van-overlay>
+
+  <!-- 输入密码弹窗（仿微信支付密码） -->
+  <van-overlay show="{{ showPassword }}" bind:click="onPasswordOverlayClick" overlay-class="password-overlay">
+    <view class="password-wrapper" catch:tap="noop">
+      <view class="password-header">
+        <text class="password-title">请输入支付密码</text>
+        <text class="password-amount">¥ {{heji}}</text>
+      </view>
+      
+      <!-- 6位密码输入框 -->
+      <view class="password-input-container">
+        <input 
+          class="real-input" 
+          type="number" 
+          password 
+          maxlength="6" 
+          focus="{{showPassword}}"
+          value="{{payPassword}}" 
+          bindinput="onPasswordInput" 
+        />
+        
+        <view class="password-digit">
+          <view class="password-digit-dot" wx:if="{{payPassword.length >= 1}}"></view>
+        </view>
+        <view class="password-digit">
+          <view class="password-digit-dot" wx:if="{{payPassword.length >= 2}}"></view>
+        </view>
+        <view class="password-digit">
+          <view class="password-digit-dot" wx:if="{{payPassword.length >= 3}}"></view>
+        </view>
+        <view class="password-digit">
+          <view class="password-digit-dot" wx:if="{{payPassword.length >= 4}}"></view>
+        </view>
+        <view class="password-digit">
+          <view class="password-digit-dot" wx:if="{{payPassword.length >= 5}}"></view>
+        </view>
+        <view class="password-digit">
+          <view class="password-digit-dot" wx:if="{{payPassword.length >= 6}}"></view>
+        </view>
+      </view>
+      
+      <view class="password-tips">密码为6位数字，请勿泄露给他人</view>
+      
+      <view class="password-buttons">
+        <button class="password-btn cancel" bind:tap="cancelPassword">取消</button>
+        <button class="password-btn confirm" bind:tap="confirmPassword">确认</button>
+      </view>
+    </view>
+  </van-overlay>
+</view>

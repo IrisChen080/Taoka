@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a2665ce-9935-49f3-a6c3-60242df3f2b0" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/coffee/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/empty/index.wxs" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/empty/index.wxs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/icon/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/icon/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/search/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/share-sheet/options.wxs" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/miniprogram_npm/@vant/weapp/share-sheet/options.wxs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/add_pinglun/add_pinglun.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/add_pinglun/add_pinglun.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/cart/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/cart/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/detail/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/detail/detail.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/detail/detail.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/dingdan/dingdan.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/dingdan/dingdan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/dingdan/dingdan.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/dingdan/dingdan.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/dingdan/dingdan.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/dingdan/dingdan.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/fenlei/fenlei.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/fenlei/fenlei.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/fenlei/fenlei.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/fenlei/fenlei.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/luck_draw/luck_draw.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/luck_draw/luck_draw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/lx/lx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/lx/lx.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/lx/lx.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/lx/lx.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/lx/lx.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/my_luck/my_luck.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/my_luck/my_luck.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/pay/pay.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/pay/pay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/pay/pay.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/pay/pay.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/pay/pay.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/pay/pay.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/pinglun/pinglun.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/pinglun/pinglun.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/products/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/products/products.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/profile/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/search/search.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/search/search.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/set/set.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/set/set.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/star/star.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/star/star.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/star/star.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/pages/star/star.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/zuce/zuce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/zuce/zuce.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/zuce/zuce.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/zuce/zuce.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/pages/zuce/zuce.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/project.private.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/project.private.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/sitemap.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/sitemap.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/static/font/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/static/font/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/static/font/demo_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/static/font/demo_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/utils/qqmap-wx-jssdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/utils/qqmap-wx-jssdk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee/utils/qqmap-wx-jssdk.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee/utils/qqmap-wx-jssdk.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/assets/fonts/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/assets/fonts/iconfont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Fenlei.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Fenlei.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Gonggao.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Gonggao.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Order.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Order.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Pinglun.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Pinglun.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Stores.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Stores.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/Users.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/Users.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/goods.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/goods.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/components/staff.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/components/staff.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_admin/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_admin/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_server_api/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_server_api/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_server_api/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_server_api/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee_server_api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/coffee_server_api/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2vNeyW7AoRHXlzfsGexUjflckxt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用级" UseSingleDictionary="true" transferred="true" />
+</project>

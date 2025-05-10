@@ -1,0 +1,69 @@
+/* pages/login/login.wxss */
+
+.login .container {
+  padding: 40rpx 60rpx;
+}
+
+/* 输入容器组 */
+.top .input {
+  margin-bottom: 20rpx;
+}
+
+/* 通用输入项样式 */
+.tel, .name, .input {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  border-bottom: 1rpx solid #eee;
+  margin-bottom: 40rpx;
+}
+
+/* 图标样式 */
+.van-icon {
+  margin-right: 24rpx;
+  color: #666;
+  flex-shrink: 0; /* 防止图标被压缩 */
+}
+
+/* 输入框通用样式 */
+input {
+  flex: 1;
+  height: 100%;
+  font-size: 28rpx;
+  color: #333;
+  padding: 0 16rpx;
+}
+
+/* 手机号/用户名特殊样式 */
+.tel input, .name input {
+  border: none;
+  background: transparent;
+}
+
+/* 直接登录链接 */
+.singin {
+  text-align: right;
+  color: #070707;
+  font-size: 26rpx;
+  margin: 60rpx 0 80rpx;
+  padding: 0 20rpx;
+}
+
+/* 注册按钮 */
+.btn {
+  background: linear-gradient(135deg, #19191a, #eaf1f3);
+  color: white;
+  height: 96rpx;
+  line-height: 96rpx;
+  text-align: center;
+  border-radius: 48rpx;
+  font-size: 34rpx;
+  box-shadow: 0 8rpx 16rpx rgba(0,122,255,0.2);
+  transition: all 0.3s;
+}
+
+/* 按钮点击效果 */
+.btn:active {
+  opacity: 0.9;
+  transform: scale(0.98);
+}

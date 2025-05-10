@@ -1,0 +1,81 @@
+/* pages/profile/profile.wxss */
+.container {
+  padding: 30rpx;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 20rpx;
+  margin: 20rpx 0;
+  background-color: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 4rpx 12rpx rgba(0,0,0,0.05);
+  border-bottom: 1rpx solid #eee;
+}
+
+.label {
+  font-size: 32rpx;
+  color: #666;
+  width: 160rpx;
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+  text-align: right;
+  padding: 10rpx 20rpx;
+  border-radius: 8rpx;
+  background-color: #fafafa;
+}
+
+picker {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+  text-align: right;
+  padding: 20rpx 0;
+}
+
+picker text {
+  display: block;
+  padding-right: 40rpx;
+  position: relative;
+}
+
+picker text::after {
+  content: ">";
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+  color: #999;
+  font-size: 28rpx;
+}
+
+.value {
+  flex: 1;
+  font-size: 32rpx;
+  color: #333;
+  text-align: right;
+  padding-right: 40rpx;
+}
+
+.save-btn {
+  margin-top: 60rpx;
+  width: 80%;
+  background: linear-gradient(135deg, #4a90e2, #5aa0ff);
+  color: #fff;
+  font-size: 34rpx;
+  border-radius: 50rpx;
+  padding: 25rpx 0;
+  box-shadow: 0 8rpx 16rpx rgba(74,144,226,0.2);
+}
+
+.save-btn:active {
+  background: linear-gradient(135deg, #3a80d2, #4a90e2);
+}

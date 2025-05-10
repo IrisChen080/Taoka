@@ -1,0 +1,414 @@
+.pay {
+  padding-bottom: 120rpx;
+  background-color: #f7fbfe; /* 淡蓝色背景 */
+}
+
+/* 会员等级样式 - 青花瓷风格 */
+.member-badge {
+  margin: 20rpx;
+  padding: 20rpx;
+  background: linear-gradient(135deg, #1e50a2, #3e7fc1); /* 青花瓷蓝色渐变 */
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4rpx 12rpx rgba(30, 80, 162, 0.2);
+  color: white;
+}
+
+.member-icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+
+.member-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.member-level {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 6rpx;
+}
+
+.member-discount {
+  font-size: 24rpx;
+  opacity: 0.9;
+}
+
+/* 折扣标签 - 青花瓷风格 */
+.discount-tag {
+  display: inline-block;
+  background-color: #1e50a2; /* 青花瓷蓝色 */
+  color: white;
+  font-size: 20rpx;
+  padding: 4rpx 10rpx;
+  border-radius: 8rpx;
+  margin-top: 8rpx;
+}
+
+/* 价格详情 */
+.price-detail {
+  margin: 20rpx;
+  padding: 30rpx;
+  background: white;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+  border: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx 0;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.discount-value {
+  color: #1e50a2; /* 青花瓷蓝色 */
+}
+
+.price-divider {
+  height: 1rpx;
+  background: #e6f0fb; /* 淡蓝色分隔线 */
+  margin: 20rpx 0;
+}
+
+.total-row {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 500;
+}
+
+.total-value {
+  color: #1e50a2; /* 青花瓷蓝色 */
+  font-weight: bold;
+}
+
+/* 支付弹窗中的会员折扣信息 */
+.payment-discount {
+  padding: 20rpx 0;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.discount-detail {
+  font-size: 26rpx;
+  color: #1e50a2; /* 青花瓷蓝色 */
+  background: #f0f7ff; /* 淡蓝色背景 */
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+  border: 1rpx solid #cce2ff; /* 淡蓝色边框 */
+}
+
+/* 商品列表 */
+.shop-list {
+  margin: 20rpx;
+  border-radius: 16rpx;
+  overflow: hidden;
+}
+
+.card {
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+  border: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+}
+
+/* 用餐方式 */
+.takeout-section {
+  margin: 30rpx;
+  padding: 30rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.05);
+  border: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+}
+
+.takeout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.takeout-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.takeout-status {
+  font-size: 28rpx;
+  color: #1e50a2; /* 青花瓷蓝色 */
+}
+
+.takeout-buttons {
+  display: flex;
+  gap: 20rpx;
+}
+
+.takeout-btn {
+  flex: 1;
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 2rpx solid #e6f0fb; /* 淡蓝色边框 */
+  border-radius: 40rpx;
+  background: #f8f8f8;
+  color: #666;
+}
+
+.takeout-btn.active {
+  background: #1e50a2; /* 青花瓷蓝色 */
+  color: white;
+  border-color: #1e50a2; /* 青花瓷蓝色 */
+}
+
+/* 优惠券 */
+.coupon {
+  color: #1e50a2; /* 青花瓷蓝色 */
+  font-size: 24rpx;
+}
+
+.coupon-active {
+  color: #3e7fc1; /* 浅青花瓷蓝色 */
+  font-size: 24rpx;
+}
+
+/* 微信支付风格的支付弹窗 - 青花瓷风格 */
+.payment-wrapper {
+  width: 84%;
+  background: white;
+  border-radius: 24rpx;
+  padding: 40rpx 30rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8rpx 24rpx rgba(30, 80, 162, 0.12);
+  border: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+}
+
+.payment-header {
+  text-align: center;
+  margin-bottom: 50rpx;
+}
+
+.payment-title {
+  font-size: 34rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20rpx;
+  color: #333;
+}
+
+.payment-method {
+  padding: 30rpx 0;
+  border-top: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+  border-bottom: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+  margin-bottom: 30rpx;
+}
+
+.method-title {
+  font-size: 28rpx;
+  color: #888;
+  margin-bottom: 15rpx;
+  display: block;
+}
+
+.method-select {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.method-icon {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+
+.wechat-icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 12rpx;
+}
+
+.delivery-method {
+  padding: 25rpx 0;
+  font-size: 28rpx;
+  color: #666;
+  text-align: center;
+}
+
+.confirm-btn {
+  margin-top: 30rpx;
+  background: #1e50a2; /* 青花瓷蓝色 */
+  color: white;
+  border-radius: 44rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  box-shadow: 0 4rpx 12rpx rgba(30, 80, 162, 0.2);
+  border: none;
+}
+
+.confirm-btn::after {
+  border: none;
+}
+
+/* 微信支付密码输入弹窗 - 青花瓷风格 */
+.password-wrapper {
+  width: 84%;
+  background: white;
+  border-radius: 24rpx;
+  padding: 50rpx 30rpx 40rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8rpx 24rpx rgba(30, 80, 162, 0.12);
+  border: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+}
+
+.password-header {
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.password-title {
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.password-amount {
+  font-size: 48rpx;
+  color: #1e50a2; /* 青花瓷蓝色 */
+  margin-top: 20rpx;
+  font-weight: 500;
+}
+
+/* 仿微信6位密码输入框 */
+.password-input-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 40rpx 0;
+  position: relative;
+  height: 100rpx;
+}
+
+.password-digit {
+  flex: 1;
+  height: 100rpx;
+  border: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+  position: relative;
+}
+
+.password-digit:not(:last-child) {
+  border-right: none;
+}
+
+.password-digit:first-child {
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+}
+
+.password-digit:last-child {
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+}
+
+.password-digit-dot {
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: #1e50a2; /* 青花瓷蓝色 */
+}
+
+.real-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 10;
+}
+
+.password-tips {
+  font-size: 26rpx;
+  color: #888;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.password-buttons {
+  display: flex;
+  gap: 20rpx;
+}
+
+.password-btn {
+  flex: 1;
+  font-size: 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 44rpx;
+  text-align: center;
+}
+
+.password-btn.cancel {
+  background: #f8f8f8;
+  color: #666;
+  border: 1rpx solid #e6f0fb; /* 淡蓝色边框 */
+}
+
+.password-btn.confirm {
+  background: #1e50a2; /* 青花瓷蓝色 */
+  color: white;
+  border: none;
+  box-shadow: 0 4rpx 12rpx rgba(30, 80, 162, 0.2);
+}
+
+.password-btn::after {
+  border: none;
+}
+
+.method-option {
+  font-size: 30rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.payment-amount {
+  font-size: 52rpx;
+  font-weight: 500;
+  color: #1e50a2; /* 青花瓷蓝色 */
+}
+
+
+.van-submit-bar__price {
+  color: #1e50a2 !important; /* 青花瓷蓝色 */
+}
+
+/* 钻石会员特殊样式 */
+.diamond-member .member-badge {
+  background: linear-gradient(135deg, #3e7fc1, #7db3e8); /* 淡蓝色渐变 */
+}
+
+/* 黄金会员特殊样式 */
+.gold-member .member-badge {
+  background: linear-gradient(135deg, #1e50a2, #3e7fc1); /* 青花瓷蓝色渐变 */
+}

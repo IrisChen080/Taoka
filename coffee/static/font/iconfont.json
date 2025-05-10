@@ -1,0 +1,121 @@
+{
+  "id": "4643293",
+  "name": "TAOKACAFE",
+  "font_family": "custom-confont",
+  "css_prefix_text": "custom-icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1727269",
+      "name": "06商品",
+      "font_class": "shangpin",
+      "unicode": "e888",
+      "unicode_decimal": 59528
+    },
+    {
+      "icon_id": "11372789",
+      "name": "优惠券",
+      "font_class": "youhuiquan",
+      "unicode": "e8c8",
+      "unicode_decimal": 59592
+    },
+    {
+      "icon_id": "41344338",
+      "name": "顾客评价",
+      "font_class": "gukepingjia",
+      "unicode": "e6c4",
+      "unicode_decimal": 59076
+    },
+    {
+      "icon_id": "645065",
+      "name": "会员卡-储值中心-储值-选中",
+      "font_class": "huiyuanqiachuzhizhongxinchuzhixuanzhong",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "37684148",
+      "name": "会员中心",
+      "font_class": "huiyuanzhongxin",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "38175141",
+      "name": "积分兑换",
+      "font_class": "jifenduihuan",
+      "unicode": "10184",
+      "unicode_decimal": 65924
+    },
+    {
+      "icon_id": "2076280",
+      "name": " 订单 处理中",
+      "font_class": "dingdanchulizhong",
+      "unicode": "e896",
+      "unicode_decimal": 59542
+    },
+    {
+      "icon_id": "2076281",
+      "name": " 订单 待付款",
+      "font_class": "dingdandaifukuan",
+      "unicode": "e897",
+      "unicode_decimal": 59543
+    },
+    {
+      "icon_id": "2076286",
+      "name": " 订单 已成功",
+      "font_class": "dingdanyichenggong",
+      "unicode": "e899",
+      "unicode_decimal": 59545
+    },
+    {
+      "icon_id": "2892820",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "879416",
+      "name": "咖啡3",
+      "font_class": "kafei3",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "5219257",
+      "name": "咖啡",
+      "font_class": "kafei1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "5192271",
+      "name": "咖啡",
+      "font_class": "kafei",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "8400682",
+      "name": "陶瓷",
+      "font_class": "taoci1",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "9122494",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "17546286",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    }
+  ]
+}
